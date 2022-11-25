@@ -42,5 +42,5 @@
 --  4  E  555.323077
 --
 --  >>> Escriba su codigo a partir de este punto <<<
---  
-
+--  tbl1,TBL2
+SELECT K0, avg(c21) FROM ( SELECT K0,C21,C13 FROM tbl1 LEFT JOIN TBL2 ON tbl1.K1= TBL2.K1) WHERE c13>400 GROUP BY K0;
